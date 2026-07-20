@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Naddumba Best Martha</title>
+  <meta name="description" content="Get in touch with Naddumba Best Martha.">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a href="index.html" class="brand"><span class="brand-logo">NBM</span>Best Martha</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">menu</button>
+      <ul class="tabs">
+        <li><a href="index.html"><span class="tab-num">01</span>Home</a></li>
+        <li><a href="about.html"><span class="tab-num">02</span>About</a></li>
+        <li><a href="projects.html"><span class="tab-num">03</span>Projects</a></li>
+        <li class="active"><a href="contact.html"><span class="tab-num">04</span>Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="hero" style="padding-bottom:40px;">
+    <div class="wrap">
+      <p class="eyebrow">Contact</p>
+      <h1 style="font-size:clamp(1.8rem,4vw,2.6rem);">Let's talk</h1>
+      <p class="lede">
+        Send a message using the form, or reach out directly through the links below.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap row">
+      <div class="col-md-7">
+        <!--
+          FORMSPREE SETUP (needed before this form can actually send email):
+          1. Go to formspree.io and sign up free with bestnaddumba@gmail.com
+          2. Create a new form — Formspree gives you an endpoint like
+             https://formspree.io/f/abcdwxyz
+          3. Replace YOUR_FORM_ID below with that ID (just the code after /f/)
+          Until you do that, the form will validate but won't actually send.
+        -->
+        <form id="contactForm" class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+          <div class="mb-3">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+          </div>
+          <div class="mb-3">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+          </div>
+          <div class="mb-3">
+            <label for="message">Message</label>
+            <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn-ink" style="border:none; cursor:pointer;">Send message</button>
+          <div id="formFeedback" class="form-feedback" role="status"></div>
+        </form>
+      </div>
+      <div class="col-md-5">
+        <p class="eyebrow">Direct</p>
+        <div class="contact-direct">
+          <a href="mailto:bestnaddumba@gmail.com">bestnaddumba@gmail.com</a>
+          <a href="tel:+256756877957">+256 756 877 957</a>
+          <a href="https://github.com/bestnaddumba-collab" target="_blank" rel="noopener">github.com/bestnaddumba-collab</a>
+          <a href="https://www.instagram.com/mug_yeni.21" target="_blank" rel="noopener">instagram.com/mug_yeni.21</a>
+        </div>
+        <!--
+          Note: your phone number will be visible to anyone who visits
+          this public site. That's fine if you're comfortable with it —
+          just worth knowing before you share the live link widely.
+        -->
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="wrap" style="display:flex; justify-content:space-between; width:100%; flex-wrap:wrap; gap:8px;">
+      <span>&copy; 2026 Naddumba Best Martha</span>
+      <span>Built with HTML, CSS &amp; JS</span>
+    </div>
+  </footer>
+
+  <button id="backToTop" aria-label="Back to top">&uarr;</button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
